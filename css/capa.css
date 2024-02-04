@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffebf2; /* Cor de fundo rosa claro */
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+.business-name h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.cta {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#instruction {
+    margin-top: 10px;
+    font-style: italic;
+    opacity: 0; /* Opacidade inicial */
+    transition: opacity 1s; /* Transição suave de opacidade */
+}
+
+/* Adicione um media query para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+    /* Aplique as alterações apenas para dispositivos com largura máxima de 600px (smartphones) */
+
+    /* Estilo para a logo */
+    .logo img {
+        width: 150px; /* Reduza o tamanho da logo para dispositivos móveis */
+    }
+
+    /* Estilo para o nome da empresa */
+    .business-name h1 {
+        font-size: 20px; /* Reduza o tamanho da fonte para dispositivos móveis */
+    }
+
+    /* Estilo para o botão de chamada para ação */
+    .cta {
+        margin-top: 15px; /* Reduza a margem superior para dispositivos móveis */
+    }
+}

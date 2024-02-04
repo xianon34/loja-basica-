@@ -1,0 +1,146 @@
+/* Reset CSS para zerar as margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral para o body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo para o header */
+header {
+    background-color: #ffebf2; /* Rosa claro */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para o logo no header */
+.logo img {
+    width: 150px; /* Ajuste conforme necessário */
+    height: auto;
+    margin-right: 20px; /* Espaçamento à direita do logo */
+}
+
+/* Estilo para a barra de retorno à página inicial */
+.retorno-home {
+    display: flex;
+    align-items: center;
+}
+
+.retorno-home a {
+    color: #333; /* Preto mais claro */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo para o título da categoria no header */
+header h1 {
+    color: #333; /* Preto mais claro */
+}
+
+/* Estilo para o conteúdo da landing page */
+.conteudo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Estilo para as imagens dos produtos */
+.produto img {
+    width: 200px; /* Ajuste conforme necessário */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Adiciona transição suave */
+}
+
+/* Efeito ao passar o cursor sobre as imagens */
+.produto img:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho da imagem */
+}
+
+/* Ajuste para colocar as imagens uma em cima da outra */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produto {
+    margin: 10px; /* Espaçamento entre as imagens */
+}
+
+
+/* Estilo para os preços dos produtos */
+.preco {
+    font-weight: bold;
+    color: #333; /* Preto mais claro */
+}
+
+footer {
+    background-color: #ffebf2; /* Rosa claro */
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Para fixar no final da página */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para o texto de contato no footer */
+.contato {
+    color: #333; /* Preto mais claro */
+}
+
+/* Estilo para o logo no footer */
+.logo-footer img {
+    width: 100px; /* Ajuste conforme necessário */
+    height: auto;
+}
+
+/* Adicione um media query para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+    /* Aplique as alterações apenas para dispositivos com largura máxima de 600px (smartphones) */
+
+    /* Estilo para o conteúdo da landing page */
+    .conteudo {
+        padding: 10px; /* Reduza o preenchimento para dispositivos móveis */
+    }
+
+    /* Estilo para as imagens dos produtos */
+    .produto img {
+        width: 100%; /* Ajuste a largura das imagens para ocupar toda a largura do contêiner */
+        max-width: 200px; /* Defina a largura máxima das imagens */
+    }
+
+    /* Estilo para o texto dos preços dos produtos */
+    .preco {
+        font-size: 14px; /* Reduza o tamanho da fonte para dispositivos móveis */
+    }
+
+    /* Estilo para o rodapé */
+    footer {
+        padding: 10px; /* Reduza o preenchimento do rodapé para dispositivos móveis */
+    }
+
+    /* Estilo para o logo no rodapé */
+    .logo-footer img {
+        width: 80px; /* Reduza o tamanho do logo no rodapé para dispositivos móveis */
+    }
+
+    /* Estilo para o texto de contato no rodapé */
+    .contato {
+        font-size: 12px; /* Reduza o tamanho da fonte para dispositivos móveis */
+    }
+}

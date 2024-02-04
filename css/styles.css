@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #ffebf2; /* Rosa claro */
+    color: #333; /* Preto mais claro */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Alterado para centralizar o conteúdo do header */
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 150px; /* Ajuste conforme necessário */
+    height: 100px;
+    margin-right: 20px; /* Espaçamento à direita do logo */
+}
+
+.search-bar {
+    flex-grow: 1; /* Expande para ocupar o espaço restante */
+    display: flex; /* Adicionado para alinhar o botão com a barra de pesquisa */
+    align-items: center; /* Adicionado para alinhar o botão com a barra de pesquisa */
+}
+
+.search-bar input {
+    width: 15%; /* Ajustado para ocupar 70% do espaço disponível */
+    height: 35px;
+    margin-right: 10px; /* Espaçamento à direita da barra de pesquisa */
+}
+
+.search-button {
+    height: 35px;
+    padding: 0 10px; /* Espaçamento interno do botão */
+    border: none;
+    background-color: #ccc; /* Cor de fundo do botão */
+    color: #333; /* Cor do texto do botão */
+    cursor: pointer;
+}
+
+.atendimento {
+    text-align: right;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0; /* Remover margem do último item */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333; /* Preto mais claro */
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 800px; /* Defina o tamanho máximo do contêiner do carrossel */
+    margin: 20px auto; /* Centralizar o contêiner e adicionar uma margem superior */
+    margin-top: 20px; /* Ajuste a margem superior para espaçamento adicional */
+}
+
+.carousel {
+    position: relative;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.carousel-nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb; /* Cor das bolinhas de navegação */
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active, .dot:hover {
+    background-color: #717171; /* Cor ativa das bolinhas de navegação */
+}
+
+.secao-aba {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #f0f8ff; /* Cor de fundo diferente para distinguir */
+    padding: 10px; /* Espaçamento interno */
+}
+
+.aba {
+    text-align: center;
+}
+
+.aba img {
+    width: 200px; /* Ajuste conforme necessário */
+    height: auto;
+}
+
+.texto-aba {
+    margin-top: 10px;
+    color: #333; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+}
+
+/* CSS Atualizado */
+.search-button {
+    height: 35px;
+    padding: 0 10px; /* Espaçamento interno do botão */
+    border: none;
+    background-color: #ccc; /* Cor de fundo do botão */
+    color: #333; /* Cor do texto do botão */
+    cursor: pointer;
+}
+
+/* Estilo para a nova div da barra de categorias */
+.category-bar {
+    background-color: #f0f8ff; /* Cor de fundo diferente para distinguir */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilo para o banner centralizado */
+.banner-container {
+    text-align: center; /* Centraliza o conteúdo */
+    margin: 20px auto; /* Margem para centralizar verticalmente */
+}
+
+.footer {
+    background-color: #ffebf2; /* Rosa claro */
+    color: #333; /* Preto mais claro */
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-footer img {
+    width: 100px; /* Ajuste conforme necessário */
+    height: auto;
+}
+
+.contato-footer {
+    text-align: right;
+}
+
+.nome-loja {
+    font-size: 18px; /* Tamanho da fonte ajustado */
+    color: #333; /* Cor do texto */
+    margin-right: 10px; /* Espaçamento à direita */
+    margin-left: 5px; /* Distância entre o nome da loja e o logo */
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+
+    .header {
+        padding: 10px; /* Reduz o preenchimento do cabeçalho para dispositivos móveis */
+    }
+
+    .logo img {
+        width: 120px; /* Reduz o tamanho do logo para dispositivos móveis */
+    }
+
+    .nome-loja {
+        display: none; /* Oculte o nome da loja para dispositivos móveis */
+    }
+
+    .search-bar input {
+        width: 60%; 
+    }
+
+    .search-button {
+        height: 30px; 
+        padding: 0 8px; 
+    }
+
+    .atendimento {
+        display: none; 
+    }
+
+    .navbar ul li {
+        margin-right: 10px; 
+    }
+
+    .carousel-container {
+        margin: 10px auto; 
+    }
+
+    .footer {
+        padding: 10px; 
+
+    .logo-footer img {
+        width: 80px; 
+    }
+
+    .contato-footer {
+        text-align: left; 
+    }
+}
+}
